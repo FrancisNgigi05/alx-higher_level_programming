@@ -3,7 +3,7 @@
 for i in range(10):
     for j in range(i + 1, 10):
         if i != j:
-            if((i + j) != 17):
+            if (i + j) != 17:
                 print("{}{}".format(i, j), end=", ")
             else:
                 print("{}{}".format(i, j), end="\n")
