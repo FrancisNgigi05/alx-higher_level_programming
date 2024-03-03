@@ -9,15 +9,15 @@ if __name__ == "__main__":
 
     func_list = [add, sub, mul, div]
 
-    for i in func_list:
-        if i == add:
+    for function in func_list:
+        if function == add:
             operator = "+"
-        elif i == sub:
+        elif function == sub:
             operator = "-"
-        elif i == mul:
+        elif function == mul:
             operator = "*"
-        elif i == div:
+        elif function == div:
             operator = "/"
         else:
             print("Invalid")
-        print("{} {} {} = {}".format(a, operator, b, i(a, b)))
+        print("{} {} {} = {}".format(a, operator, b, function(a, b)))
