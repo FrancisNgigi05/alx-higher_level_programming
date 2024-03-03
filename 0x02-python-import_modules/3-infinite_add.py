@@ -6,9 +6,6 @@ if __name__ == "__main__":
     argv_length = len(sys.argv)
     add = 0
 
-    if argv_length < 2:
-        print(0)
-
     for i in range(1, argv_length):
         add += int(sys.argv[i])
     print("{}".format(add))
