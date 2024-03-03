@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-from add_0 import add
+addition = __import__('add_0', globals(), locals(), [], 0)
 
-if __name__ == "__main__":
+if addition.__name__ == "add_0":
     a = 1
     b = 2
-    print("{} + {} = {}".format(a, b, add(a, b)))
+    result = addition.add(a, b)
+
+    print("{} + {} = {}".format(a, b, result))
