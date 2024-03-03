@@ -8,7 +8,7 @@ if __name__ == "__main__":
     if argv_length < 2:
         print("0 arguments.")
 
-    elif argv_length == 2 and argv_length < 3:
+    elif argv_length == 2:
         print("1 argument:")
         print("1: {}".format(sys.argv[1]))
 
