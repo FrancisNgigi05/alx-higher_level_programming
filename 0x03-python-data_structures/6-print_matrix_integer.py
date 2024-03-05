@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-def print_matrix_integer(matrix=[]):
+def print_matrix_integer(matrix=[[]]):
     for arr in matrix:
-        for  number in range(len(arr)):
+        for number in range(len(arr)):
             print("{}".format(arr[number]), end="")
 
             if number != len(arr) - 1:
                 print(" ", end="")
         print("")
-
