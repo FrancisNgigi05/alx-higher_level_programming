@@ -12,8 +12,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
         if len(list_b) < 2:
             list_b.append(0)
 
-    result = [(list_a[0] + list_b[0]), (list_b[1] + list_b[1])]
+    result = [(list_a[0] + list_b[0]), (list_a[1] + list_b[1])]
 
     new_tuple = tuple(result)
 
-    return result
+    return new_tuple 
