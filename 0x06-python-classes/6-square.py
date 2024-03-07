@@ -3,7 +3,10 @@
 
 
 class Square:
-    """Represents a square"""
+    """Represents a square
+    Args:
+        size(int): The size of the new square
+    """
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -33,7 +36,7 @@ class Square:
                 not not all(isinstance(i, int) for i in value) or
                 not all(i >= 0 for i in value)):
             raise TypeError
-            ("positive must be an integer or a tuple of 2 positive integers")
+            ("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
