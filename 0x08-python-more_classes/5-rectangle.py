@@ -3,7 +3,6 @@
 
 
 class Rectangle:
-    """Represents a new square"""
     def __init__(self, height=0, width=0):
         self.width = width
         self.height = height
@@ -34,7 +33,6 @@ class Rectangle:
         else:
             self.__height = value
 
-    
     def area(self):
         return self.__height * self.__width
 
@@ -53,7 +51,7 @@ class Rectangle:
             [rect.append("#") for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
-            
+
         return "".join(rect)
 
     def __repr__(self):
