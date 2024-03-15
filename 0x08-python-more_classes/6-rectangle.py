@@ -50,7 +50,7 @@ class Rectangle:
 
     def __str__(self):
         if self.__width == 0 and self.__height == 0:
-            print("")
+            return ""
 
         rect = []
 
